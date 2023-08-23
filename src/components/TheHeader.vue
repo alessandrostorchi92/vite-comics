@@ -32,10 +32,14 @@ export default {
             
             <ul class="nav nav-pills">
                 <li class="nav-item" v-for="link in navLinks">
-                    <a href="#" class="nav-link" v-bind:class="{'active-page': link.name === 'COMICS'}">{{ link.name }}</a>
+                    <a href="#" class="nav-link" v-bind:class="{'link-active': link.name === 'COMICS'}">{{ link.name }}</a>
                 </li>
             </ul>
 
+        </div>
+
+        <div class="hero-section">
+            <img src="../assets/img/jumbotron.jpg" alt="immagine di sfondo cartoons">
         </div>
 
     </header>
@@ -48,18 +52,24 @@ export default {
 
 .top-bar {
     @include mixins.flex-content;
+    min-height: 100px;
+
+    img {
+        width: 75px;
+    }
 }
 
 a {
     color: $color-secondary;
     font-weight: bolder;
 
-    &.active-page {
+    &.link-active {
         color: $color-primary;
         border-bottom: 3px solid $color-primary;
         border-radius: 0;
         
     }
 }
+
 
 </style>
