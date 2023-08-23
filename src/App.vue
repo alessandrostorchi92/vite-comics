@@ -26,10 +26,8 @@ export default {
 </script>
 
 <template>
-
   <TheHeader></TheHeader>
   <TheFooter></TheFooter>
-  
 </template>
 
 <style>

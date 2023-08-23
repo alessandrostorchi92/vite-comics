@@ -71,5 +71,9 @@ a {
     }
 }
 
+.hero-section {
+    height: 150px;
+}
+
 
 </style>
