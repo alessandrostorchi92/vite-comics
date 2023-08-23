@@ -38,10 +38,6 @@ export default {
 
         </div>
 
-        <div class="hero-section">
-            <img src="../assets/img/jumbotron.jpg" alt="immagine di sfondo cartoons">
-        </div>
-
     </header>
 
 </template>
@@ -70,10 +66,5 @@ a {
         
     }
 }
-
-.hero-section {
-    height: 200px;
-}
-
 
 </style>

@@ -61,65 +61,76 @@ export default {
 </script>
 
 <template>
+
     <footer>
 
-        <!-- Prima sezione del footer  -->
+        <!-- Sezione footer top   -->
 
-        <div class="container">
+        <section class="section-footer-top">
 
-            <!-- Sezione DC Comics e Shop  -->
-            <div>
+            <div class="container">
 
-                <h5>DC COMICS</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item" v-for="link in DcComicsLinks">
-                        <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
-                    </li>
-                </ul>
+                <div class="row d-flex justify-content-center align-items-center justify-content-between">
 
-                <h5>SHOP</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item" v-for="link in ShopLinks">
-                        <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
-                    </li>
-                </ul>
+                    <div class="col-6 d-flex gap-4">
 
-            </div>
+                        <!-- Sezione DC Comics e Shop  -->
+                        <div>
+                            <h5 class="title">DC COMICS</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item" v-for="link in DcComicsLinks">
+                                    <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
+                                </li>
+                            </ul>
             
-            <!-- Sezione DC  -->
-            <div>
+                            <h5 class="title mt-2">SHOP</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item" v-for="link in ShopLinks">
+                                    <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <!-- Sezione DC  -->
+                        <div>
+                            <h5 class="title">DC</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item" v-for="link in  DCLinks">
+                                    <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <!-- Sezione Sites  -->
+                        <div>
+                            <h5 class="title">SITES</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item" v-for="link in SiteLinks">
+                                    <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                <h5>DC</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item" v-for="link in  DCLinks">
-                        <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
-                    </li>
-                </ul>
+                    </div>
+
+                    <div class="col-6">
+
+                        <!-- Immagine Logo  -->
+                        <img src="../assets/img/dc-logo-bg.png" alt="Immagine Logo">
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <!-- Sezione Sites  -->
-            <div>
+        </section>
 
-                <h5>SITES</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item" v-for="link in SiteLinks">
-                        <a class="nav-link" aria-current="page" href="#">{{ link.name }}</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <!-- Immagine Logo  -->
-            <img src="../assets/img/dc-logo-bg.png" alt="Immagine Logo">
-
-        </div>
-
-        <!-- Seconda sezione del footer  -->
+        <!-- Sezione footer bottom  -->
 
         <div class="container">
 
-            <div class="d-flex  justify-content-around justify-content-center align-items-center">
+            <div class="d-flex justify-content-around justify-content-center align-items-center">
 
                 <!-- Sezione di sinistra  -->
 
@@ -151,4 +162,25 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/_variables.scss" as *;
+
+
+.section-footer-top {
+    background: url("../assets/img/footer-bg.jpg");
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.title {
+    color: $color-text;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a {
+    color: #959595;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    padding: 0.2rem;  
+}
 </style>
