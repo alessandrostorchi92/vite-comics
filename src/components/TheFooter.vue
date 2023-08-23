@@ -67,7 +67,7 @@ export default {
 
         <div class="container">
 
-            <!-- Sezione DC Comics  -->
+            <!-- Sezione DC Comics e Shop  -->
             <div>
 
                 <h5>DC COMICS</h5>
@@ -77,11 +77,6 @@ export default {
                     </li>
                 </ul>
 
-            </div>
-
-            <!-- Sezione Shop  -->
-            <div>
-
                 <h5>SHOP</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item" v-for="link in ShopLinks">
@@ -90,7 +85,7 @@ export default {
                 </ul>
 
             </div>
-
+            
             <!-- Sezione DC  -->
             <div>
 
@@ -154,4 +149,6 @@ export default {
     </footer>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+</style>
