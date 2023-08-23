@@ -72,7 +72,7 @@ a {
 }
 
 .hero-section {
-    height: 150px;
+    height: 200px;
 }
 
 
