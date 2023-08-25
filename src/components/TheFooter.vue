@@ -57,7 +57,6 @@ export default {
 
 }
 
-
 </script>
 
 <template>
@@ -139,20 +138,22 @@ export default {
                 <div class="h-100 d-flex justify-content-center align-items-center justify-content-between">
 
                     <!-- Left Section  -->
-    
-                    <button type="button" class="btn border-primary border-2 p-2 fw-bold fs-5 text-white">SIGN-UP NOW</button>
-    
+
+                    <button type="button" class="btn border-primary border-2 p-2 fw-bold fs-5 text-white">SIGN-UP
+                        NOW</button>
+
                     <!-- Right Section  -->
-    
+
                     <div class="d-flex align-items-center gap-2">
-    
+
                         <span class="fw-bold fs-5 text-white">FOLLOW US</span>
-    
-                        <!-- // Questa procedimento mi permette di stampare le immagini dinamicamente su vite-vue  -->
+
+                        <!-- Questa procedimento mi permette di stampare le immagini dinamicamente su vite-vue  -->
+
                         <div v-for="icon in SocialIcons">
                             <img :src="getImagePath(`../assets/img/${icon.img}`)" alt="">
                         </div>
-    
+
                     </div>
 
                 </div>
@@ -160,7 +161,6 @@ export default {
             </div>
 
         </section>
-
 
     </footer>
 
@@ -172,7 +172,7 @@ export default {
 
 .section-footer-top {
     background: url("../assets/img/footer-bg.jpg");
-    height: 480px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -193,5 +193,4 @@ a {
     background-color: #303030;
     height: 100px;
 }
-
 </style>

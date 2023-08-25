@@ -27,9 +27,10 @@ export default {
 
 <template>
   <TheHeader></TheHeader>
+  <main></main>
   <TheFooter></TheFooter>
 </template>
 
-<style>
+<styl lang="scss">
 
-</style>
+</styl>
