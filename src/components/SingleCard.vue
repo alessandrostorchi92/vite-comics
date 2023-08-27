@@ -12,11 +12,15 @@ export default {
 
 <template>
 
-    <div class="card h-100 border-0 text-white text-center d-flex flex-column ms-auto">
-        <img :src="thumb" alt="">
-        <div class="card-body bg-dark">
-            {{ card.series }}
+    <div class="card-container">
+        
+        <div class="card h-100 border-0">
+            <img :src="thumb" class="card-img-top" alt="">
+            <div class="card-body bg-dark text-white text-center d-flex flex-column mt-auto">
+                {{ series.toUpperCase() }}
+            </div>
         </div>
+
     </div>
 
 </template>
@@ -25,9 +29,10 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 @use "../styles/partials/mixins";
 
-.single-card {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card-container {
+    display: flex;
+}
+.card-img-top {
+    aspect-ratio: 1/1;
 }
 </style>
